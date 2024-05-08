@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4600B2B72BD4928300F08F7A /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4600B2B62BD4928300F08F7A /* Alert.swift */; };
 		462EADF32BD0902D005633E2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462EADF22BD0902D005633E2 /* NetworkManager.swift */; };
 		462EADF52BD0915F005633E2 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462EADF42BD0915F005633E2 /* APError.swift */; };
 		462EADF72BD0979F005633E2 /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462EADF62BD0979F005633E2 /* AppetizerListViewModel.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4600B2B62BD4928300F08F7A /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		462EADF22BD0902D005633E2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		462EADF42BD0915F005633E2 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		462EADF62BD0979F005633E2 /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				462EADF22BD0902D005633E2 /* NetworkManager.swift */,
 				462EADF42BD0915F005633E2 /* APError.swift */,
 				462EADF62BD0979F005633E2 /* AppetizerListViewModel.swift */,
+				4600B2B62BD4928300F08F7A /* Alert.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				463729212BCF989D00F78CB0 /* AppetizerTabView.swift in Sources */,
 				462EADF32BD0902D005633E2 /* NetworkManager.swift in Sources */,
 				4637291F2BCF989D00F78CB0 /* AppetizersApp.swift in Sources */,
+				4600B2B72BD4928300F08F7A /* Alert.swift in Sources */,
 				4637292D2BCF98F900F78CB0 /* AppetizerListView.swift in Sources */,
 				463729312BCF990900F78CB0 /* OrderView.swift in Sources */,
 			);
