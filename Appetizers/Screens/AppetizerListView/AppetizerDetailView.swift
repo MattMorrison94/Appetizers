@@ -19,48 +19,15 @@ struct AppetizerDetailView: View {
                 .frame(width: 300, height: 225)
             
             VStack {
-                Text(appetizer.name)
-                    .font(.title2)
-                    .fontWeight(.semibold)
+                TitleView(title: appetizer.name)
                 
-                Text(appetizer.description)
-                    .multilineTextAlignment(.center)
-                    .font(.body)
-                    .padding()
+                DescriptionView(description: appetizer.description)
                 
                 HStack(spacing: 40) {
-                    VStack(spacing: 5) {
-                        Text("Calories")
-                            .bold()
-                            .font(.caption)
-                        
-                        Text("\(appetizer.calories)")
-                            .foregroundStyle(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
+                    NutritionInfo(title: "Calories", value: appetizer.calories)
+                    NutritionInfo(title: "Carbs", value: appetizer.carbs)
+                    NutritionInfo(title: "Protein", value: appetizer.protein)
                     
-                    VStack(spacing: 5) {
-                        Text("Carbs")
-                            .bold()
-                            .font(.caption)
-                        
-                        Text("\(appetizer.carbs)")
-                            .foregroundStyle(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
-                    
-                    VStack(spacing: 5) {
-                        Text("Protein")
-                            .bold()
-                            .font(.caption)
-                        
-                        Text("\(appetizer.protein)")
-                            .foregroundStyle(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
                 }
             }
             
@@ -69,13 +36,7 @@ struct AppetizerDetailView: View {
             Button {
                 print("Tapped")
             } label: {
-                Text("$\(appetizer.price, specifier: "%.2f") - Add to Order")
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                    .frame(width: 260, height: 50)
-                    .foregroundStyle(.white)
-                    .background(Color.brandPrimary)
-                    .cornerRadius(10)
+                APButton(title: "$\(appetizer.price, specifier: "%.2f") - Add to Order")
             }
             .padding(.bottom, 30)
         }
@@ -86,21 +47,51 @@ struct AppetizerDetailView: View {
         .overlay(Button {
             isShowingDetail = false
         } label: {
-            ZStack {
-                Circle()
-                    .frame(width: 30, height: 30)
-                    .foregroundStyle(.white)
-                    .opacity(0.6)
-                
-                Image(systemName: "xmark")
-                    .imageScale(.small)
-                    .frame(width: 44, height: 44)
-                    .foregroundStyle(.black)
-            }
+            XDismissButton()
         }, alignment: .topTrailing)
     }
 }
 
 #Preview {
     AppetizerDetailView(appetizer: MockData.sampleAppetizer, isShowingDetail: .constant(true))
+}
+
+struct NutritionInfo: View {
+    let title: String
+    let value: Int
+    
+    var body: some View{
+        VStack(spacing: 5) {
+            Text(title)
+                .bold()
+                .font(.caption)
+            
+            Text("\(value)")
+                .foregroundStyle(.secondary)
+                .fontWeight(.semibold)
+                .italic()
+        }
+    }
+}
+
+struct TitleView: View {
+    let title: String
+    
+    var body: some View {
+        Text(title)
+            .multilineTextAlignment(.center)
+            .font(.body)
+            .padding()
+    }
+}
+
+struct DescriptionView: View {
+    let description: String
+    
+    var body: some View {
+        Text(description)
+            .multilineTextAlignment(.center)
+            .font(.body)
+            .padding()
+    }
 }
