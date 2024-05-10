@@ -27,6 +27,7 @@ struct RemoteImage: View {
     
     var body: some View {
         image?.resizable() ?? Image(systemName: "fork.knife.circle.fill")
+            .resizable()
     }
 }
 
