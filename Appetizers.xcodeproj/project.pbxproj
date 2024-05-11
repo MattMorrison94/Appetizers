@@ -14,6 +14,8 @@
 		462EADF32BD0902D005633E2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462EADF22BD0902D005633E2 /* NetworkManager.swift */; };
 		462EADF52BD0915F005633E2 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462EADF42BD0915F005633E2 /* APError.swift */; };
 		462EADF72BD0979F005633E2 /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462EADF62BD0979F005633E2 /* AppetizerListViewModel.swift */; };
+		4632AD982BEF45DE003108E9 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632AD972BEF45DE003108E9 /* EmptyState.swift */; };
+		4632AD9A2BEF490D003108E9 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632AD992BEF490D003108E9 /* Order.swift */; };
 		4637291F2BCF989D00F78CB0 /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4637291E2BCF989D00F78CB0 /* AppetizersApp.swift */; };
 		463729212BCF989D00F78CB0 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463729202BCF989D00F78CB0 /* AppetizerTabView.swift */; };
 		463729232BCF989E00F78CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 463729222BCF989E00F78CB0 /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 		462EADF22BD0902D005633E2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		462EADF42BD0915F005633E2 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		462EADF62BD0979F005633E2 /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
+		4632AD972BEF45DE003108E9 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		4632AD992BEF490D003108E9 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		4637291B2BCF989D00F78CB0 /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4637291E2BCF989D00F78CB0 /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
 		463729202BCF989D00F78CB0 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -68,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4632AD922BEF0BBC003108E9 /* Empty States */ = {
+			isa = PBXGroup;
+			children = (
+				4632AD972BEF45DE003108E9 /* EmptyState.swift */,
+			);
+			path = "Empty States";
+			sourceTree = "<group>";
+		};
 		463729122BCF989D00F78CB0 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +197,7 @@
 			children = (
 				463729322BCFDC7D00F78CB0 /* Appetizer.swift */,
 				46D455E32BEE5B9F0055E38B /* User.swift */,
+				4632AD992BEF490D003108E9 /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,6 +205,7 @@
 		464478AF2BEC42C400377806 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4632AD922BEF0BBC003108E9 /* Empty States */,
 				46601C092BECE3970098677F /* Buttons */,
 				464478B22BEC42F300377806 /* Cells */,
 				464478B12BEC42EA00377806 /* Image */,
@@ -307,6 +321,7 @@
 				462EADF52BD0915F005633E2 /* APError.swift in Sources */,
 				46601C0D2BECE4690098677F /* XDismissButton.swift in Sources */,
 				463729352BCFE57000F78CB0 /* AppetizerListCell.swift in Sources */,
+				4632AD9A2BEF490D003108E9 /* Order.swift in Sources */,
 				46D455E02BEE546F0055E38B /* AccountViewModel.swift in Sources */,
 				462EADF72BD0979F005633E2 /* AppetizerListViewModel.swift in Sources */,
 				46025A492BEBAA6B00368FC9 /* Color+Ext.swift in Sources */,
@@ -318,6 +333,7 @@
 				462EADF32BD0902D005633E2 /* NetworkManager.swift in Sources */,
 				464478A52BEC3BF400377806 /* RemoteImage.swift in Sources */,
 				46D455E22BEE56670055E38B /* String+Ext.swift in Sources */,
+				4632AD982BEF45DE003108E9 /* EmptyState.swift in Sources */,
 				4603648D2BEC45B300F1C60F /* AppetizerDetailView.swift in Sources */,
 				4637291F2BCF989D00F78CB0 /* AppetizersApp.swift in Sources */,
 				4600B2B72BD4928300F08F7A /* Alert.swift in Sources */,
